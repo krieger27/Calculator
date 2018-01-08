@@ -56,3 +56,30 @@ let num2Input = document.getElementById("number2");
 function printToDOM(value) {
   document.getElementById("output").innerHTML = value;
 }
+
+// Event Listeners
+
+document.getElementById("addIt").addEventListener("click", function() {
+  // get the numbers
+  // num1Input value;
+  // num2Input value;
+  // add the numbers and capture resulting value
+  let result = calculate(+num1Input.value, +num2Input.value, add);
+  // print the values
+  printToDOM(result);
+});
+
+document.getElementById("subIt").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, subtract);
+  printToDOM(result);
+});
+
+document.getElementById("multIt").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, multiply);
+  printToDOM(result);
+});
+
+document.getElementById("divIt").addEventListener("click", function() {
+  let result = calculate(+num1Input.value, +num2Input.value, divide);
+  printToDOM(result);
+});
