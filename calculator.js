@@ -22,9 +22,10 @@ function add(num1, num2) {
 Create a function that subtracts two numbers
 passed in as arguments. Return the difference.
 */
-// function subtract(num1, num2) {
-//   return num1-num2
-// } ----This is wrong had to reread instructions
+
+function subtract(num1, num2) {
+  return num1-num2
+};
 
 function calcModulo(num1, num2) {
   return num1 % num2;
